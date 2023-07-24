@@ -1,0 +1,11 @@
+<div>
+  <h1> Order <%= order.id %> </h1>
+  <h2> Client email: <%= order.client_email %> </h2>
+  <h3> Delivery address: <%= order.delivery_address %> </h3>
+  <h4> Amount: <%= order.total_amount %> </h4>
+  <div style="display: flex; flex-direction: column-reverse;">
+    <%= link_to "Pay", "#" %>
+    <%= link_to "Show Items", order_items_path %>
+  </div>
+</div>
+<hr />
